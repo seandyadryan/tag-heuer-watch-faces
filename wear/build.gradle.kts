@@ -19,7 +19,14 @@ android {
         }
     }
     buildTypes {
+        debug {
+            // Remove generated R classes so the WFF APK contains resources only.
+            isMinifyEnabled = true
+            isShrinkResources = false
+        }
         release {
+            isMinifyEnabled = true
+            isShrinkResources = false
             if (signingPath != null) signingConfig = signingConfigs.getByName("production")
         }
     }

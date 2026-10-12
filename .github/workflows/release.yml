@@ -37,6 +37,7 @@ jobs:
           chmod +x gradlew
           python3 tools/verify_project.py
           ./gradlew :wear:lintRelease :companion:lintRelease :wear:bundleRelease :companion:bundleRelease :wear:assembleRelease :companion:assembleRelease --console=plain
+          python3 tools/verify_project.py
       - uses: actions/upload-artifact@v4
         with:
           name: signed-play-store-bundles
