@@ -14,16 +14,16 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-java@v6.0.1
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4.0.4
         with:
           packages: platform-tools
           log-accepted-android-sdk-licenses: false
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6.4.0
       - name: Android SDK
         run: sdkmanager "platforms;android-35" "platforms;android-36" "build-tools;35.0.0"
       - name: Build and lint both applications
@@ -45,7 +45,7 @@ jobs:
           grep -q 'PASSED' wff-validation.log
           if grep -q 'FAILED' wff-validation.log; then exit 1; fi
           java -jar "$RUNNER_TEMP/wff/play-validations/memory-footprint/build/libs/memory-footprint.jar" --watch-face wear/build/outputs/apk/debug/wear-debug.apk --schema-version 1 --ambient-limit-mb 10 --active-limit-mb 100 --apply-v1-offload-limitations --estimate-optimization 2>&1 | tee memory-validation.log
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7.0.2
         if: always()
         with:
           name: debug-packages-and-reports
