@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">腕間的賽車傳承。</string>
+    <string name="preview_style">預覽配色（手錶需單獨設定）</string>
+    <string name="ambient">常亮顯示預覽</string>
+    <string name="compatibility">需要 Wear OS 4 或更新版本。不支援 Apple Watch、Garmin、Amazfit、Huawei 和 Tizen。</string>
+    <string name="open_store">在 Google Play 開啟錶面</string>
+    <string name="guide">安裝指南</string>
+    <string name="step_pair">透過手錶廠商的手機應用程式配對手錶。兩台裝置使用同一 Google 帳戶。</string>
+    <string name="step_install">在手錶上開啟 Google Play，搜尋 TAG Heuer McLaren 30th 並安裝。僅在手機安裝不會在手錶安裝錶面。</string>
+    <string name="step_select">長按目前錶面，點新增並選擇此錶面。在編輯中選擇配色。</string>
+    <string name="troubleshoot">未顯示？檢查 Wear OS 版本、帳戶及手錶上的安裝情況，重新啟動手錶。商店連結在發布後生效。</string>
+    <string name="language">語言</string>
+    <string name="system_language">系統語言</string>
+    <string name="privacy">無需帳戶，無廣告、分析或個人資料收集。購買由 Google Play 管理。</string>
+    <string name="disclaimer">獨立專案。TAG Heuer 和 McLaren 為其擁有者的商標。商業使用需要授權。</string>
+    <string name="no_browser">未安裝瀏覽器。</string>
+    <string name="accent_color">強調色</string>
+</resources>

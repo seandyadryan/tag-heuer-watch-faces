@@ -1,0 +1,38 @@
+<WatchFace width="450" height="450">
+    <Metadata key="CLOCK_TYPE" value="ANALOG" />
+    <Metadata key="PREVIEW_TIME" value="10:10:40" />
+    <UserConfigurations>
+        <ColorConfiguration id="accentColor" displayName="accent_color" defaultValue="papaya">
+            <ColorOption id="papaya" colors="#FF8700" />
+            <ColorOption id="ice" colors="#5FBFFF" />
+            <ColorOption id="silver" colors="#D8DEE7" />
+        </ColorConfiguration>
+    </UserConfigurations>
+    <Scene backgroundColor="#000000">
+        <PartImage x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Image resource="dial" />
+        </PartImage>
+        <PartImage x="0" y="0" width="450" height="450" tintColor="[CONFIGURATION.accentColor.0]">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Image resource="accent" />
+        </PartImage>
+        <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour" x="214" y="110" width="22" height="135" pivotX="0.5" pivotY="0.85185185">
+                <Variant mode="AMBIENT" target="alpha" value="150" />
+            </HourHand>
+            <MinuteHand resource="minute" x="218" y="56" width="14" height="190" pivotX="0.5" pivotY="0.88947368">
+                <Variant mode="AMBIENT" target="alpha" value="150" />
+            </MinuteHand>
+            <SecondHand resource="second" x="222" y="37" width="6" height="215" pivotX="0.5" pivotY="0.8744186" tintColor="[CONFIGURATION.accentColor.0]">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </SecondHand>
+        </AnalogClock>
+        <DigitalClock x="135" y="293" width="180" height="40">
+            <TimeText x="0" y="0" width="180" height="40" format="hh:mm" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                <Variant mode="AMBIENT" target="alpha" value="150" />
+                <Font family="SYNC_TO_DEVICE" size="26" color="#EEF1F4" />
+            </TimeText>
+        </DigitalClock>
+    </Scene>
+</WatchFace>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">История гонок на вашем запястье.</string>
+    <string name="preview_style">Цвет предпросмотра (на часах настраивается отдельно)</string>
+    <string name="ambient">Предпросмотр постоянного экрана</string>
+    <string name="compatibility">Требуется Wear OS 4 или новее. Apple Watch, Garmin, Amazfit, Huawei и Tizen не поддерживаются.</string>
+    <string name="open_store">Открыть циферблат в Google Play</string>
+    <string name="guide">Инструкция по установке</string>
+    <string name="step_pair">Подключите часы через приложение производителя. Используйте один аккаунт Google на обоих устройствах.</string>
+    <string name="step_install">Откройте Google Play на часах. Найдите TAG Heuer McLaren 30th и установите. Установка на телефон не устанавливает циферблат на часы.</string>
+    <string name="step_select">Нажмите и удерживайте циферблат, выберите Добавить и этот циферблат. Цвет меняется через Изменить.</string>
+    <string name="troubleshoot">Не отображается? Проверьте Wear OS, аккаунт и установку на часах. Перезапустите часы. Ссылка заработает после публикации.</string>
+    <string name="language">Язык</string>
+    <string name="system_language">Язык системы</string>
+    <string name="privacy">Без аккаунтов, рекламы, аналитики и сбора личных данных. Покупками управляет Google Play.</string>
+    <string name="disclaimer">Независимый проект. TAG Heuer и McLaren — марки их владельцев. Коммерческое использование требует разрешения.</string>
+    <string name="no_browser">Браузер не установлен.</string>
+    <string name="accent_color">Цвет акцента</string>
+</resources>

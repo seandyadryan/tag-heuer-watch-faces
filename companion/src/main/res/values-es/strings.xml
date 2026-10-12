@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">La tradición del motor en tu muñeca.</string>
+    <string name="preview_style">Color de vista previa (ajuste separado en el reloj)</string>
+    <string name="ambient">Vista previa siempre activa</string>
+    <string name="compatibility">Requiere Wear OS 4 o posterior. No compatible con Apple Watch, Garmin, Amazfit, Huawei ni Tizen.</string>
+    <string name="open_store">Abrir esfera en Google Play</string>
+    <string name="guide">Guía de instalación</string>
+    <string name="step_pair">Vincula el reloj con la aplicación de su fabricante. Usa la misma cuenta de Google en ambos dispositivos.</string>
+    <string name="step_install">Abre Google Play en el reloj. Busca TAG Heuer McLaren 30th e instálalo. Instalar en el móvil no instala la esfera en el reloj.</string>
+    <string name="step_select">Mantén pulsada la esfera, toca Añadir y selecciona esta esfera. Usa Editar para elegir el color.</string>
+    <string name="troubleshoot">¿No aparece? Comprueba Wear OS, la cuenta y la instalación en el reloj. Reinicia el reloj. El enlace funciona tras la publicación.</string>
+    <string name="language">Idioma</string>
+    <string name="system_language">Idioma del sistema</string>
+    <string name="privacy">Sin cuentas, anuncios, analíticas ni recopilación de datos personales. Google Play gestiona las compras.</string>
+    <string name="disclaimer">Proyecto independiente. TAG Heuer y McLaren son marcas de sus propietarios. El uso comercial requiere autorización.</string>
+    <string name="no_browser">No hay un navegador instalado.</string>
+    <string name="accent_color">Color de acento</string>
+</resources>

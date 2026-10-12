@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">TAG Heuer McLaren Guide</string>
+    <string name="subtitle">Racing heritage, on your wrist.</string>
+    <string name="preview_style">Preview accent (set separately on watch)</string>
+    <string name="ambient">Always-on preview</string>
+    <string name="compatibility">Requires Wear OS 4 or newer. Apple Watch, Garmin, Amazfit, Huawei and Tizen are not supported.</string>
+    <string name="open_store">Open watch face in Google Play</string>
+    <string name="guide">Installation guide</string>
+    <string name="step_pair">Pair your watch with its manufacturer’s phone app. Use the same Google account on both devices.</string>
+    <string name="step_install">Open Google Play on your watch. Find TAG Heuer McLaren 30th and install it. A phone install does not install the watch face.</string>
+    <string name="step_select">Long-press your current watch face, tap Add, select this face. Use Edit to choose an accent color.</string>
+    <string name="troubleshoot">Missing face? Check Wear OS version, Google account and watch installation. Restart the watch. The store link works after publication.</string>
+    <string name="language">Language</string>
+    <string name="system_language">System language</string>
+    <string name="privacy">No accounts, advertising, analytics or personal data collection. Store purchases are managed by Google Play.</string>
+    <string name="disclaimer">Independent project. TAG Heuer and McLaren are trademarks of their owners. Commercial branding requires authorization.</string>
+    <string name="no_browser">No browser is installed.</string>
+    <string name="accent_color">Accent color</string>
+</resources>

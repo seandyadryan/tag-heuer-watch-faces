@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">Warisan balap di pergelangan Anda.</string>
+    <string name="preview_style">Aksen preview (atur terpisah di jam)</string>
+    <string name="ambient">Preview layar selalu aktif</string>
+    <string name="compatibility">Memerlukan Wear OS 4 atau lebih baru. Apple Watch, Garmin, Amazfit, Huawei dan Tizen tidak didukung.</string>
+    <string name="open_store">Buka watch face di Google Play</string>
+    <string name="guide">Panduan instalasi</string>
+    <string name="step_pair">Pasangkan jam melalui aplikasi ponsel dari produsen jam. Gunakan akun Google yang sama di kedua perangkat.</string>
+    <string name="step_install">Buka Google Play di jam. Cari TAG Heuer McLaren 30th dan instal. Instalasi di ponsel tidak memasang watch face di jam.</string>
+    <string name="step_select">Tekan lama tampilan jam, ketuk Tambah, lalu pilih watch face ini. Gunakan Edit untuk memilih warna aksen.</string>
+    <string name="troubleshoot">Tidak muncul? Periksa versi Wear OS, akun Google dan instalasi di jam. Mulai ulang jam. Tautan toko aktif setelah publikasi.</string>
+    <string name="language">Bahasa</string>
+    <string name="system_language">Bahasa sistem</string>
+    <string name="privacy">Tanpa akun, iklan, analitik atau pengumpulan data pribadi. Pembelian dikelola Google Play.</string>
+    <string name="disclaimer">Project independen. TAG Heuer dan McLaren adalah merek milik pemiliknya. Penggunaan merek secara komersial memerlukan izin.</string>
+    <string name="no_browser">Browser tidak terpasang.</string>
+    <string name="accent_color">Warna aksen</string>
+</resources>

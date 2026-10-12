@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">Historia wyścigów na Twoim nadgarstku.</string>
+    <string name="preview_style">Kolor podglądu (ustaw osobno na zegarku)</string>
+    <string name="ambient">Podgląd ekranu zawsze włączonego</string>
+    <string name="compatibility">Wymaga Wear OS 4 lub nowszego. Apple Watch, Garmin, Amazfit, Huawei i Tizen nie są obsługiwane.</string>
+    <string name="open_store">Otwórz tarczę w Google Play</string>
+    <string name="guide">Instrukcja instalacji</string>
+    <string name="step_pair">Sparuj zegarek przez aplikację producenta na telefonie. Używaj tego samego konta Google na obu urządzeniach.</string>
+    <string name="step_install">Otwórz Google Play na zegarku. Znajdź TAG Heuer McLaren 30th i zainstaluj. Instalacja na telefonie nie instaluje tarczy na zegarku.</string>
+    <string name="step_select">Przytrzymaj tarczę, dotknij Dodaj i wybierz tę tarczę. Kolor zmienisz przez Edytuj.</string>
+    <string name="troubleshoot">Nie widać tarczy? Sprawdź Wear OS, konto i instalację na zegarku. Uruchom zegarek ponownie. Link działa po publikacji.</string>
+    <string name="language">Język</string>
+    <string name="system_language">Język systemu</string>
+    <string name="privacy">Bez kont, reklam, analityki i zbierania danych osobowych. Zakupami zarządza Google Play.</string>
+    <string name="disclaimer">Niezależny projekt. TAG Heuer i McLaren to marki ich właścicieli. Użycie komercyjne wymaga zgody.</string>
+    <string name="no_browser">Nie zainstalowano przeglądarki.</string>
+    <string name="accent_color">Kolor akcentu</string>
+</resources>

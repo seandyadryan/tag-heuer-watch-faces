@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">إرث السباقات على معصمك.</string>
+    <string name="preview_style">لون المعاينة (يُضبط بشكل منفصل على الساعة)</string>
+    <string name="ambient">معاينة الشاشة الدائمة</string>
+    <string name="compatibility">يتطلب Wear OS 4 أو أحدث. لا يدعم Apple Watch أو Garmin أو Amazfit أو Huawei أو Tizen.</string>
+    <string name="open_store">فتح واجهة الساعة في Google Play</string>
+    <string name="guide">دليل التثبيت</string>
+    <string name="step_pair">اربط الساعة بتطبيق الشركة المصنعة على الهاتف. استخدم حساب Google نفسه على الجهازين.</string>
+    <string name="step_install">افتح Google Play على الساعة وابحث عن TAG Heuer McLaren 30th وثبّته. التثبيت على الهاتف لا يثبت الواجهة على الساعة.</string>
+    <string name="step_select">اضغط مطولاً على واجهة الساعة ثم اختر إضافة وهذه الواجهة. اختر تعديل لتغيير اللون.</string>
+    <string name="troubleshoot">لم تظهر؟ تحقق من Wear OS والحساب والتثبيت على الساعة. أعد تشغيل الساعة. يعمل الرابط بعد النشر.</string>
+    <string name="language">اللغة</string>
+    <string name="system_language">لغة النظام</string>
+    <string name="privacy">لا حسابات أو إعلانات أو تحليلات أو جمع بيانات شخصية. يدير Google Play عمليات الشراء.</string>
+    <string name="disclaimer">مشروع مستقل. TAG Heuer وMcLaren علامتان لمالكيهما. الاستخدام التجاري يتطلب تصريحاً.</string>
+    <string name="no_browser">لا يوجد متصفح مثبت.</string>
+    <string name="accent_color">لون التمييز</string>
+</resources>

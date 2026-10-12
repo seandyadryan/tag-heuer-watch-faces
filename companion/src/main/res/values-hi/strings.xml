@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">रेसिंग की विरासत आपकी कलाई पर।</string>
+    <string name="preview_style">पूर्वावलोकन रंग (घड़ी पर अलग से चुनें)</string>
+    <string name="ambient">हमेशा चालू स्क्रीन का पूर्वावलोकन</string>
+    <string name="compatibility">Wear OS 4 या नया चाहिए। Apple Watch, Garmin, Amazfit, Huawei और Tizen समर्थित नहीं हैं।</string>
+    <string name="open_store">Google Play में वॉच फेस खोलें</string>
+    <string name="guide">इंस्टॉल करने की गाइड</string>
+    <string name="step_pair">निर्माता के फ़ोन ऐप से घड़ी जोड़ें। दोनों उपकरणों पर एक ही Google खाता इस्तेमाल करें।</string>
+    <string name="step_install">घड़ी पर Google Play खोलें। TAG Heuer McLaren 30th खोजें और इंस्टॉल करें। फ़ोन पर इंस्टॉल करने से घड़ी पर फेस इंस्टॉल नहीं होता।</string>
+    <string name="step_select">वॉच फेस दबाकर रखें, जोड़ें चुनें और यह फेस चुनें। रंग बदलने के लिए संपादित करें चुनें।</string>
+    <string name="troubleshoot">फेस नहीं दिखा? Wear OS, खाता और घड़ी पर इंस्टॉलेशन जाँचें। घड़ी रीस्टार्ट करें। लिंक प्रकाशन के बाद काम करेगा।</string>
+    <string name="language">भाषा</string>
+    <string name="system_language">सिस्टम की भाषा</string>
+    <string name="privacy">कोई खाता, विज्ञापन, विश्लेषण या निजी डेटा संग्रह नहीं। खरीद Google Play द्वारा प्रबंधित होती है।</string>
+    <string name="disclaimer">स्वतंत्र प्रोजेक्ट। TAG Heuer और McLaren उनके मालिकों के ट्रेडमार्क हैं। व्यावसायिक उपयोग के लिए अनुमति चाहिए।</string>
+    <string name="no_browser">ब्राउज़र इंस्टॉल नहीं है।</string>
+    <string name="accent_color">हाइलाइट रंग</string>
+</resources>

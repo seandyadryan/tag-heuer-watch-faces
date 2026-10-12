@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">Rennsportgeschichte am Handgelenk.</string>
+    <string name="preview_style">Vorschaufarbe (auf der Uhr separat einstellen)</string>
+    <string name="ambient">Always-on-Vorschau</string>
+    <string name="compatibility">Erfordert Wear OS 4 oder neuer. Apple Watch, Garmin, Amazfit, Huawei und Tizen werden nicht unterstützt.</string>
+    <string name="open_store">Zifferblatt in Google Play öffnen</string>
+    <string name="guide">Installationsanleitung</string>
+    <string name="step_pair">Kopple die Uhr mit der App ihres Herstellers. Verwende auf beiden Geräten dasselbe Google-Konto.</string>
+    <string name="step_install">Öffne Google Play auf der Uhr. Suche TAG Heuer McLaren 30th und installiere es. Die Installation auf dem Handy reicht nicht aus.</string>
+    <string name="step_select">Halte das Zifferblatt gedrückt, tippe auf Hinzufügen und wähle dieses Zifferblatt. Wähle unter Bearbeiten die Farbe.</string>
+    <string name="troubleshoot">Fehlt das Zifferblatt? Prüfe Wear OS, Konto und Installation auf der Uhr. Starte die Uhr neu. Der Link funktioniert nach Veröffentlichung.</string>
+    <string name="language">Sprache</string>
+    <string name="system_language">Systemsprache</string>
+    <string name="privacy">Keine Konten, Werbung, Analysen oder Erfassung persönlicher Daten. Google Play verwaltet Käufe.</string>
+    <string name="disclaimer">Unabhängiges Projekt. TAG Heuer und McLaren sind Marken ihrer Eigentümer. Kommerzielle Nutzung erfordert eine Genehmigung.</string>
+    <string name="no_browser">Kein Browser installiert.</string>
+    <string name="accent_color">Akzentfarbe</string>
+</resources>

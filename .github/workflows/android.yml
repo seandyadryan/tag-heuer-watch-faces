@@ -1,0 +1,54 @@
+name: Android CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Android SDK
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Build and lint both applications
+        run: |
+          chmod +x gradlew
+          ./gradlew :wear:assembleDebug :companion:assembleDebug :wear:lintDebug :companion:lintDebug --console=plain
+          python3 tools/verify_project.py
+      - name: Build pinned official WFF validation tools
+        run: |
+          git clone https://github.com/google/watchface.git "$RUNNER_TEMP/wff"
+          git -C "$RUNNER_TEMP/wff" checkout b6cdda0acd3e4c5d0be5624fcdc01209380029d1
+          chmod +x "$RUNNER_TEMP/wff/third_party/wff/gradlew" "$RUNNER_TEMP/wff/play-validations/gradlew"
+          "$RUNNER_TEMP/wff/third_party/wff/gradlew" -p "$RUNNER_TEMP/wff/third_party/wff" :specification:validator:executable-jar --console=plain
+          "$RUNNER_TEMP/wff/play-validations/gradlew" -p "$RUNNER_TEMP/wff/play-validations" :memory-footprint:executable-jar --console=plain
+      - name: Validate WFF and memory budget
+        run: |
+          set -o pipefail
+          java -jar "$RUNNER_TEMP/wff/third_party/wff/specification/validator/build/libs/wff-validator.jar" 1 wear/src/main/res/raw/watchface.xml 2>&1 | tee wff-validation.log
+          grep -q 'PASSED' wff-validation.log
+          if grep -q 'FAILED' wff-validation.log; then exit 1; fi
+          java -jar "$RUNNER_TEMP/wff/play-validations/memory-footprint/build/libs/memory-footprint.jar" --watch-face wear/build/outputs/apk/debug/wear-debug.apk --schema-version 1 --ambient-limit-mb 10 --active-limit-mb 100 --apply-v1-offload-limitations --estimate-optimization 2>&1 | tee memory-validation.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: debug-packages-and-reports
+          path: |
+            wear/build/outputs/apk/debug/*.apk
+            companion/build/outputs/apk/debug/*.apk
+            **/build/reports/lint-results-debug.*
+            *-validation.log
+          retention-days: 14

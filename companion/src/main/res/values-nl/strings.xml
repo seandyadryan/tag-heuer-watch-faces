@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">Racegeschiedenis om je pols.</string>
+    <string name="preview_style">Voorbeeldkleur (apart instellen op het horloge)</string>
+    <string name="ambient">Voorbeeld van altijd-aan-scherm</string>
+    <string name="compatibility">Wear OS 4 of nieuwer vereist. Apple Watch, Garmin, Amazfit, Huawei en Tizen worden niet ondersteund.</string>
+    <string name="open_store">Wijzerplaat in Google Play openen</string>
+    <string name="guide">Installatiegids</string>
+    <string name="step_pair">Koppel je horloge via de telefoonapp van de fabrikant. Gebruik hetzelfde Google-account op beide apparaten.</string>
+    <string name="step_install">Open Google Play op je horloge. Zoek TAG Heuer McLaren 30th en installeer. Installatie op de telefoon installeert de wijzerplaat niet op het horloge.</string>
+    <string name="step_select">Houd de wijzerplaat ingedrukt, tik op Toevoegen en kies deze wijzerplaat. Kies een kleur via Bewerken.</string>
+    <string name="troubleshoot">Niet zichtbaar? Controleer Wear OS, account en installatie op het horloge. Herstart het horloge. De link werkt na publicatie.</string>
+    <string name="language">Taal</string>
+    <string name="system_language">Systeemtaal</string>
+    <string name="privacy">Geen accounts, advertenties, analyses of verzameling van persoonsgegevens. Google Play beheert aankopen.</string>
+    <string name="disclaimer">Onafhankelijk project. TAG Heuer en McLaren zijn merken van hun eigenaren. Commercieel gebruik vereist toestemming.</string>
+    <string name="no_browser">Geen browser geïnstalleerd.</string>
+    <string name="accent_color">Accentkleur</string>
+</resources>

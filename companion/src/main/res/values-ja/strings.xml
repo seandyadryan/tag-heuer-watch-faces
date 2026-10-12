@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">レースの歴史を腕元に。</string>
+    <string name="preview_style">プレビューの色（時計で別途設定）</string>
+    <string name="ambient">常時表示のプレビュー</string>
+    <string name="compatibility">Wear OS 4以降が必要です。Apple Watch、Garmin、Amazfit、Huawei、Tizenには対応していません。</string>
+    <string name="open_store">Google Playで文字盤を開く</string>
+    <string name="guide">インストールガイド</string>
+    <string name="step_pair">メーカーのスマートフォンアプリで時計をペア設定します。両方の端末で同じGoogleアカウントを使用してください。</string>
+    <string name="step_install">時計でGoogle Playを開き、TAG Heuer McLaren 30thを検索してインストールします。スマートフォンへのインストールだけでは時計に入りません。</string>
+    <string name="step_select">文字盤を長押しし、追加からこの文字盤を選びます。編集で色を変更できます。</string>
+    <string name="troubleshoot">表示されない場合はWear OS、アカウント、時計へのインストールを確認し、時計を再起動します。ストアのリンクは公開後に利用できます。</string>
+    <string name="language">言語</string>
+    <string name="system_language">システムの言語</string>
+    <string name="privacy">アカウント、広告、解析、個人データの収集はありません。購入はGoogle Playが管理します。</string>
+    <string name="disclaimer">独立したプロジェクトです。TAG HeuerとMcLarenは各所有者の商標です。商用利用には許可が必要です。</string>
+    <string name="no_browser">ブラウザがインストールされていません。</string>
+    <string name="accent_color">アクセントカラー</string>
+</resources>

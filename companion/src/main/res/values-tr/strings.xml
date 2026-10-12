@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">Yarış mirası bileğinizde.</string>
+    <string name="preview_style">Önizleme rengi (saatte ayrıca ayarlayın)</string>
+    <string name="ambient">Her zaman açık ekran önizlemesi</string>
+    <string name="compatibility">Wear OS 4 veya üstü gerekir. Apple Watch, Garmin, Amazfit, Huawei ve Tizen desteklenmez.</string>
+    <string name="open_store">Kadranı Google Play’de aç</string>
+    <string name="guide">Kurulum kılavuzu</string>
+    <string name="step_pair">Saati üreticinin telefon uygulamasıyla eşleştirin. İki cihazda da aynı Google hesabını kullanın.</string>
+    <string name="step_install">Saatte Google Play’i açın. TAG Heuer McLaren 30th arayın ve yükleyin. Telefona yüklemek kadranı saate yüklemez.</string>
+    <string name="step_select">Kadrana uzun basın, Ekle’ye dokunun ve bu kadranı seçin. Renk için Düzenle’yi kullanın.</string>
+    <string name="troubleshoot">Görünmüyor mu? Wear OS, hesap ve saatteki kurulumu kontrol edin. Saati yeniden başlatın. Bağlantı yayınlandıktan sonra çalışır.</string>
+    <string name="language">Dil</string>
+    <string name="system_language">Sistem dili</string>
+    <string name="privacy">Hesap, reklam, analiz veya kişisel veri toplama yoktur. Satın alımları Google Play yönetir.</string>
+    <string name="disclaimer">Bağımsız proje. TAG Heuer ve McLaren sahiplerinin markalarıdır. Ticari kullanım için izin gerekir.</string>
+    <string name="no_browser">Tarayıcı yüklü değil.</string>
+    <string name="accent_color">Vurgu rengi</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="subtitle">La storia delle corse al polso.</string>
+    <string name="preview_style">Colore anteprima (impostazione separata sull’orologio)</string>
+    <string name="ambient">Anteprima sempre attiva</string>
+    <string name="compatibility">Richiede Wear OS 4 o successivo. Apple Watch, Garmin, Amazfit, Huawei e Tizen non sono supportati.</string>
+    <string name="open_store">Apri quadrante in Google Play</string>
+    <string name="guide">Guida all’installazione</string>
+    <string name="step_pair">Associa l’orologio tramite l’app del produttore. Usa lo stesso account Google su entrambi i dispositivi.</string>
+    <string name="step_install">Apri Google Play sull’orologio. Cerca TAG Heuer McLaren 30th e installalo. L’installazione sul telefono non installa il quadrante.</string>
+    <string name="step_select">Tieni premuto il quadrante, tocca Aggiungi e scegli questo quadrante. Usa Modifica per scegliere il colore.</string>
+    <string name="troubleshoot">Non compare? Controlla Wear OS, account e installazione sull’orologio. Riavvia l’orologio. Il link funziona dopo la pubblicazione.</string>
+    <string name="language">Lingua</string>
+    <string name="system_language">Lingua di sistema</string>
+    <string name="privacy">Nessun account, pubblicità, analisi o raccolta di dati personali. Google Play gestisce gli acquisti.</string>
+    <string name="disclaimer">Progetto indipendente. TAG Heuer e McLaren sono marchi dei rispettivi proprietari. L’uso commerciale richiede autorizzazione.</string>
+    <string name="no_browser">Nessun browser installato.</string>
+    <string name="accent_color">Colore accento</string>
+</resources>
