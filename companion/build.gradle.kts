@@ -1,11 +1,11 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
 android {
     namespace = "com.deploydulupulangnanti.tagheuermclarenwf.companion"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.deploydulupulangnanti.tagheuermclarenwf.companion"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
     }

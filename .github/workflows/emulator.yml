@@ -35,7 +35,7 @@ jobs:
       matrix:
         include:
           - device: phone
-            api: 35
+            api: 36
             target: google_apis
             profile: pixel_6
           - device: wear
