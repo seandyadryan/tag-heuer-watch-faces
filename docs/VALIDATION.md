@@ -1,5 +1,14 @@
 # Validation evidence
 
+## Reference dial update — 1.1.0
+
+- [CI passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38232787289): both builds/lint, WFF schema, resource references and pivots, full locale sets, and official memory test.
+- [Signed release passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38232790676): version code 2 / 1.1.0 AABs and APKs for both modules. APK signer matches the existing keystore SHA-256 below.
+- [Emulator checks passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38232798899): the red reference dial is visible on Wear OS API 33, with separate moving subdial hands and the actual day-of-month rendered in the date aperture. Android API 36 phone preview and locale checks also passed.
+- The composed preview and actual Wear OS screenshot were visually inspected. Conservative decoded artwork upper bound is 3.89 MiB, including retained original assets. The high-resolution source master is outside Android resources and is not shipped in the APK.
+
+![Red dial actually running on Wear OS 4](images/wear-os4-red.png)
+
 ## Verified on 12 October 2026
 
 - [Android CI passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38229884979): builds/lint for both modules, full 21-locale resource contracts, official WFF v1 schema validator, and official memory-footprint test (10 MB ambient / 100 MB active limits).
