@@ -9,10 +9,11 @@ import java.util.Locale
 
 /** Phone preview only. The wearable uses the system WFF renderer and system clock. */
 class DialPreview(context: Context) : View(context) {
-    var accent = Color.rgb(255, 135, 0)
+    var accent = Color.rgb(190, 40, 55)
     var ambient = false
-    private val dial = BitmapFactory.decodeResource(resources, R.drawable.dial)
-    private val mask = BitmapFactory.decodeResource(resources, R.drawable.accent)
+    private val dial = BitmapFactory.decodeResource(resources, R.drawable.dial_mclaren_red)
+    private val subHand = BitmapFactory.decodeResource(resources, R.drawable.subdial_hand)
+    private val cap = BitmapFactory.decodeResource(resources, R.drawable.metal_cap)
     private val hour = BitmapFactory.decodeResource(resources, R.drawable.hour)
     private val minute = BitmapFactory.decodeResource(resources, R.drawable.minute)
     private val second = BitmapFactory.decodeResource(resources, R.drawable.second)
@@ -34,13 +35,23 @@ class DialPreview(context: Context) : View(context) {
         paint.colorFilter = null
         if (!ambient) {
             canvas.drawBitmap(dial, null, RectF(0f, 0f, 450f, 450f), paint)
-            paint.colorFilter = PorterDuffColorFilter(accent, PorterDuff.Mode.SRC_IN)
-            canvas.drawBitmap(mask, null, RectF(0f, 0f, 450f, 450f), paint)
-            paint.colorFilter = null
         }
-        fun hand(bitmap: Bitmap, angle: Float, rect: RectF) {
-            canvas.save(); canvas.rotate(angle, 225f, 225f)
+        fun hand(bitmap: Bitmap, angle: Float, rect: RectF, cx: Float = 225f, cy: Float = 225f) {
+            canvas.save(); canvas.rotate(angle, cx, cy)
             canvas.drawBitmap(bitmap, null, rect, paint); canvas.restore()
+        }
+        if (!ambient) {
+            hand(subHand, now.second * 6f, RectF(143f, 162f, 149f, 207f), 146f, 202f)
+            hand(subHand, now.minute * 6f + now.second * 0.1f, RectF(291f, 162f, 297f, 207f), 294f, 202f)
+            hand(subHand, (now.hour % 12) * 30f + now.minute * 0.5f, RectF(217f, 254f, 223f, 299f), 220f, 294f)
+            listOf(146f to 202f, 294f to 202f, 220f to 294f).forEach { (cx, cy) ->
+                canvas.drawBitmap(cap, null, RectF(cx - 4, cy - 4, cx + 4, cy + 4), paint)
+            }
+            canvas.save(); canvas.rotate(30f, 327f, 278f)
+            paint.color = Color.WHITE; paint.textAlign = Paint.Align.CENTER
+            paint.typeface = Typeface.create("sans-serif", Typeface.NORMAL); paint.textSize = 15f
+            canvas.drawText(now.dayOfMonth.toString(), 327f, 278f - (paint.ascent() + paint.descent()) / 2, paint)
+            canvas.restore()
         }
         paint.alpha = if (ambient) 150 else 255
         hand(hour, (now.hour % 12) * 30f + now.minute * 0.5f, RectF(214f, 110f, 236f, 245f))
@@ -51,13 +62,16 @@ class DialPreview(context: Context) : View(context) {
             hand(second, now.second * 6f, RectF(222f, 37f, 228f, 252f))
             paint.colorFilter = null
         }
-        paint.color = if (ambient) Color.GRAY else accent
-        canvas.drawCircle(225f, 225f, 7f, paint)
-        paint.typeface = Typeface.create("sans-serif", Typeface.BOLD)
-        paint.textAlign = Paint.Align.CENTER; paint.textSize = 26f; paint.color = if (ambient) Color.GRAY else Color.WHITE
-        val locale = resources.configuration.locales[0] ?: Locale.getDefault()
-        val format = if (android.text.format.DateFormat.is24HourFormat(context)) "HH:mm" else "hh:mm"
-        canvas.drawText(now.format(DateTimeFormatter.ofPattern(format, locale)), 225f, 320f, paint)
+        paint.alpha = if (ambient) 150 else 255
+        canvas.drawBitmap(cap, null, RectF(217f, 217f, 233f, 233f), paint)
+        if (ambient) {
+            paint.typeface = Typeface.create("sans-serif", Typeface.NORMAL)
+            paint.textAlign = Paint.Align.CENTER; paint.textSize = 26f; paint.color = Color.WHITE
+            val locale = resources.configuration.locales[0] ?: Locale.getDefault()
+            val format = if (android.text.format.DateFormat.is24HourFormat(context)) "HH:mm" else "hh:mm"
+            canvas.drawText(now.format(DateTimeFormatter.ofPattern(format, locale)), 225f, 320f, paint)
+        }
+        paint.alpha = 255
         canvas.restore()
     }
 }

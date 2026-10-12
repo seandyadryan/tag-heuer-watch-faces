@@ -2,14 +2,14 @@
 
 Project Android native untuk watch face Wear OS dan aplikasi panduan Kotlin. Source tersedia di [GitHub](https://github.com/seandyadryan/tag-heuer-watch-faces).
 
-![Watch face preview](wear/src/main/res/drawable-nodpi/preview.png)
+![Watch face preview](wear/src/main/res/drawable-nodpi/preview_mclaren_red.png)
 
 ## Cakupan
 
-- `wear`: Watch Face Format **v1**, resource-only XML, application ID **`com.deploydulupulangnanti.tagheuermclarenwf`**. Wear OS 4+ (API 33+), analog/digital, tiga warna aksen, mode ambient.
+- `wear`: Watch Face Format **v1**, resource-only XML, application ID **`com.deploydulupulangnanti.tagheuermclarenwf`**. Wear OS 4+ (API 33+), dial McLaren bezel merah, jarum analog, tiga subdial waktu, tanggal aktual, tiga warna jarum detik, mode ambient.
 - `companion`: Android Kotlin native (API 26+), application ID `com.deploydulupulangnanti.tagheuermclarenwf.companion`. Preview lokal, panduan pemasangan, pemilih bahasa, tautan Google Play. Tidak mentransfer watch face lewat Bluetooth.
 - 21 locale lengkap untuk interface dan panduan. Bahasa lain menggunakan Inggris. Terjemahan merupakan draft yang perlu review penutur asli. Ini **bukan dukungan seluruh bahasa dunia**.
-- Jam mengikuti waktu perangkat; format digital mengikuti pengaturan 12/24 jam. Desain dial dan jarum dibuat secara geometris dalam project, tanpa logo atau foto pihak ketiga.
+- Jam mengikuti waktu perangkat; waktu digital hanya tampil di ambient dan mengikuti pengaturan 12/24 jam. Dial baru dihasilkan dengan imagegen berdasarkan referensi foto pengguna, termasuk merek/logo dalam referensi. Jarum dan tanggal digambar terpisah agar tetap hidup. [Aset dan prompt](docs/ASSETS.md). Aset geometris versi awal tetap disimpan.
 
 Tidak ada satu APK yang kompatibel dengan semua smartwatch. Apple Watch/watchOS, Garmin/Connect IQ, Amazfit/Zepp, Huawei dan Samsung Tizen lama memerlukan implementasi terpisah. Model Wear OS harus menjalankan versi 4 atau lebih baru; cek OS dan ketersediaan Google Play pada model/negara target. Belum ada klaim pengujian semua model.
 

@@ -27,7 +27,7 @@ class MainActivity : Activity() {
         super.attachBaseContext(newBase.createConfigurationContext(config))
     }
 
-    private val orange = Color.rgb(255, 135, 0)
+    private val orange = Color.rgb(190, 40, 55)
     private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()
     private fun label(value: String, size: Float = 16f, color: Int = Color.LTGRAY) = TextView(this).apply {
         text = value; textSize = size; setTextColor(color)

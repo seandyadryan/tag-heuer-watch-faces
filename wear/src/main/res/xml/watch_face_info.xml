@@ -1,5 +1,5 @@
 <WatchFaceInfo>
-    <Preview value="@drawable/preview" />
+    <Preview value="@drawable/preview_mclaren_red" />
     <MultipleInstancesAllowed value="true" />
     <Editable value="true" />
 </WatchFaceInfo>

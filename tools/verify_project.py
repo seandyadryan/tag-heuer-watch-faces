@@ -20,13 +20,20 @@ assert not manifest.findall('uses-permission')
 face = ET.parse(ROOT / 'wear/src/main/res/raw/watchface.xml').getroot()
 colors = face.find('UserConfigurations/ColorConfiguration')
 assert colors.attrib['defaultValue'] in {e.attrib['id'] for e in colors}
-for hand in face.findall('Scene/AnalogClock/*'):
-    pivot_x = float(hand.attrib['x']) + float(hand.attrib['width']) * float(hand.attrib['pivotX'])
-    pivot_y = float(hand.attrib['y']) + float(hand.attrib['height']) * float(hand.attrib['pivotY'])
-    assert abs(pivot_x - 225) < .001 and abs(pivot_y - 225) < .001, hand.tag
-for image in face.findall('.//Image') + face.findall('Scene/AnalogClock/*'):
+hand_tags = {'HourHand', 'MinuteHand', 'SecondHand'}
+hands = []
+for clock in face.findall('.//AnalogClock'):
+    for hand in clock:
+        if hand.tag not in hand_tags:
+            continue
+        hands.append(hand)
+        pivot_x = float(hand.attrib['x']) + float(hand.attrib['width']) * float(hand.attrib['pivotX'])
+        pivot_y = float(hand.attrib['y']) + float(hand.attrib['height']) * float(hand.attrib['pivotY'])
+        assert abs(pivot_x - float(clock.attrib['width']) / 2) < .001 and abs(pivot_y - float(clock.attrib['height']) / 2) < .001, hand.tag
+for image in face.findall('.//Image') + hands:
     assert (ROOT / 'wear/src/main/res/drawable-nodpi' / (image.attrib['resource'] + '.png')).exists()
-assert face.find('Scene/AnalogClock/SecondHand/Variant').attrib['value'] == '0'
+main_clock = next(c for c in face.findall('Scene/AnalogClock') if c.attrib['width'] == '450')
+assert main_clock.find('SecondHand/Variant').attrib['value'] == '0'
 base = strings(ROOT / 'companion/src/main/res/values/strings.xml')
 translations = list(ROOT.glob('companion/src/main/res/values-*/strings.xml'))
 for path in translations:
