@@ -39,6 +39,8 @@ Workflow `Signed release bundles` dijalankan manual melalui Actions. Secret: `KE
 - [Persiapan Google Play](docs/PLAY-STORE.md), [cakupan bahasa](docs/LOCALIZATION.md), [kebijakan privasi](docs/PRIVACY.md).
 - [Catatan validasi](docs/VALIDATION.md) memisahkan tes otomatis dan tes perangkat yang masih harus dilakukan.
 
+Build, signed release, validator WFF, evaluator memori, dan smoke check emulator berhasil pada 12 Oktober 2026. Screenshot aktual dan link run tersedia dalam catatan validasi. Pengujian jam fisik dan persetujuan Play Console belum dilakukan.
+
 Project independen, tidak menyatakan afiliasi resmi. Sebelum penjualan dengan nama/desain TAG Heuer atau McLaren, dapatkan izin tertulis yang sesuai. Disclaimer di aplikasi bukan pengganti izin. [Kebijakan kekayaan intelektual Google Play](https://support.google.com/googleplay/android-developer/answer/9888072).
 
 Google mengharuskan [Watch Face Format](https://developer.android.com/training/wearables/wff) untuk watch face pada 2026. Bundle WFF tidak dapat memuat kode Kotlin; karena itu aplikasi Kotlin dan watch face dipisahkan sesuai [petunjuk struktur Google](https://developer.android.com/training/wearables/wff/setup).
