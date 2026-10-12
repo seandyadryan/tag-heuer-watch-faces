@@ -34,15 +34,18 @@ else
   adb shell settings put global device_provisioned 1
   adb shell settings put secure user_setup_complete 1
   adb shell svc power stayon true
-  adb shell am broadcast -a com.google.android.wearable.app.DEBUG_SURFACE --es operation set-watchface --es watchFaceId "$package" | tee evidence/select-face.txt
-  grep -q 'Favorite Id=' evidence/select-face.txt
+  selected=false
   rendered=false
   for attempt in $(seq 1 18); do
     sleep 5
+    if [ "$selected" != true ]; then
+      adb shell am broadcast -a com.google.android.wearable.app.DEBUG_SURFACE --es operation set-watchface --es watchFaceId "$package" | tee evidence/select-face.txt
+      if grep -q 'Favorite Id=' evidence/select-face.txt; then selected=true; fi
+    fi
     adb shell input keyevent KEYCODE_WAKEUP
     adb shell input keyevent KEYCODE_HOME
     adb exec-out screencap -p > evidence/wear-active.png
-    if python3 tools/check_wear_screenshot.py evidence/wear-active.png; then
+    if [ "$selected" = true ] && python3 tools/check_wear_screenshot.py evidence/wear-active.png; then
       rendered=true
       break
     fi

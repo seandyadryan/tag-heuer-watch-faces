@@ -29,7 +29,7 @@ Output: `wear/build/outputs/bundle/release/wear-release.aab`, `companion/build/o
 
 ## GitHub runner
 
-Workflow `Android CI` memakai **GitHub-hosted Ubuntu runner**, berjalan pada push `main`, PR dan manual. Menjalankan build, lint, pemeriksaan resource, validator WFF resmi serta evaluator memori. Tool resmi dipin pada commit yang tercantum dalam workflow. Artifact debug dan laporan disimpan 14 hari.
+Workflow `Android CI` memakai **GitHub-hosted Ubuntu 24.04 runner**, berjalan pada push `main`, PR dan manual. Menjalankan build, lint, pemeriksaan resource, validator WFF resmi serta evaluator memori. Tool resmi dipin pada commit yang tercantum dalam workflow. Artifact debug dan laporan disimpan 14 hari. Workflow manual `Emulator smoke checks` menguji instalasi/launch di Android API 36 dan pemuatan WFF di Wear OS API 33, serta mengunggah screenshot dan log.
 
 Workflow `Signed release bundles` dijalankan manual melalui Actions. Secret: `KEYSTORE_BASE64`, `RELEASE_STORE_PASSWORD`, `RELEASE_KEY_PASSWORD`, `RELEASE_KEY_ALIAS`. Keystore hanya dipulihkan di direktori temporer runner. Workflow menghasilkan signed AAB/APK dengan retensi 7 hari, tanpa upload otomatis ke Play Console. Repository collaborator dengan hak edit workflow bisa menggunakan key melalui workflow; batasi akses akun/repository.
 
