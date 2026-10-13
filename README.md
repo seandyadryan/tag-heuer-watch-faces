@@ -15,7 +15,7 @@ Tidak ada satu APK yang kompatibel dengan semua smartwatch. Apple Watch/watchOS,
 
 ## Build
 
-JDK 17, Android SDK 35 (wear) dan 36 (pendamping), Gradle wrapper disertakan. Target API wear 35 dan ponsel 36 mengikuti [persyaratan Google Play 2026](https://support.google.com/googleplay/android-developer/answer/11926878). Buka folder ini di Android Studio atau:
+JDK 17, Android SDK 36 untuk kedua modul, Gradle wrapper disertakan. Versi rilis 5.0.0 (`versionCode` 5); `compileSdk` dan `targetSdk` keduanya 36. Minimum API tetap 33 untuk Wear OS dan 26 untuk ponsel. Buka folder ini di Android Studio atau:
 
 ```powershell
 ./gradlew.bat :wear:assembleDebug :companion:assembleDebug :wear:lintDebug :companion:lintDebug

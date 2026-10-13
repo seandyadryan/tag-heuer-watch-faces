@@ -1,13 +1,13 @@
 plugins { id("com.android.application") }
 android {
     namespace = "com.deploydulupulangnanti.tagheuermclarenwf"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.deploydulupulangnanti.tagheuermclarenwf"
         minSdk = 33
-        targetSdk = 35
-        versionCode = 4
-        versionName = "1.1.0"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "5.0.0"
     }
     val signingPath = providers.environmentVariable("RELEASE_STORE_FILE").orNull
     if (signingPath != null) {
