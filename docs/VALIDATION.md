@@ -1,5 +1,14 @@
 # Validation evidence
 
+## Shared-package phone build — 6.0.0 (13 October 2026)
+
+- Corrected the companion application ID to `com.deploydulupulangnanti.tagheuermclarenwf`, matching the Wear OS app and requested Play listing. Both use the original signing certificate. Phone versionCode is 6; Wear OS remains 5. Compile and target SDKs remain 36.
+- Internal Kotlin namespace stays `.companion`; the manifest declares the fully qualified launcher activity, and emulator launch commands use the correct package/component pair.
+- Local phone bundle/APK build, release lint, resource verification and APK/AAB signature checks passed. APK badging confirms shared package, versionCode 6, versionName 6.0.0, target API 36 and the correct launcher. The phone manifest does not require watch hardware.
+- Current signed phone files are in `artifacts/mobile-same-package-6.0.0/`. Older `.companion` artifacts are superseded and must not be used for the existing listing.
+- Use the shared listing's phone/tablet track for the phone AAB and dedicated Wear OS track for the resource-only watch AAB. Separate AABs do not imply separate Play package identities. See [Wear quality WO-G7](https://developer.android.com/develop/adaptive-apps/quality-guidelines/wear-app-quality).
+- [CI passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38357686573) and [emulator checks passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38357692347) for commit `30b981a`: the shared-package phone app launches on API 36, locale changes and guide scrolling work, and the watch face still installs/renders on Wear OS API 33.
+
 ## Optional phone companion — 6.0.0 (13 October 2026)
 
 This earlier build used the `.companion` application ID and is superseded by the
