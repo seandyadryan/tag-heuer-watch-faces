@@ -12,7 +12,7 @@ if [ "$device" = phone ]; then
   adb shell am start -W -n "$package/$activity"
   sleep 3
   adb shell dumpsys activity activities > evidence/activity.txt
-  grep -q "$activity" evidence/activity.txt
+  grep -Fq "$package/.companion.MainActivity" evidence/activity.txt
   adb exec-out screencap -p > evidence/phone-en.png
   adb shell cmd locale set-app-locales "$package" --user 0 --locales id
   adb shell am force-stop "$package"
