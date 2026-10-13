@@ -1,0 +1,10 @@
+<id>
+• Pembaruan versi aplikasi ke 5.0.0.
+• Compile SDK dan target API diperbarui ke Android API 36.
+• Tetap mendukung Wear OS 4 atau lebih baru.
+</id>
+<en-US>
+• Updated app version to 5.0.0.
+• Updated compile SDK and target API to Android API 36.
+• Continues to support Wear OS 4 and newer.
+</en-US>

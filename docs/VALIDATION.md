@@ -1,5 +1,16 @@
 # Validation evidence
 
+## SDK 36 release — 5.0.0 (13 October 2026)
+
+- Both modules now use versionCode 5, versionName 5.0.0, compileSdk 36 and targetSdk 36. Minimum SDKs remain 33 (Wear OS) and 26 (Android companion).
+- Clean task rerun of both release builds and release lint passed locally with JDK 17. APK badging confirms the versions and SDK values in the built packages.
+- Both APK signatures and both AAB JAR signatures were verified. APK signer SHA-256 matches the original upload certificate shown below.
+- The official WFF v1 schema validator and official memory-footprint evaluator passed against the release face. Resource contracts, all 21 locale sets and the wearable no-DEX check passed.
+- [CI passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38341658858) for source commit `55f79f2`.
+- Local signed deliverables are in `artifacts/release-5.0.0/`; application IDs, artwork and behavior are unchanged. Prior screenshots remain representative.
+- [Signed release passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38341791350), producing signed AAB/APK files for both modules.
+- [Emulator checks passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38341770454): phone API 36 launch/locale/guide checks and Wear OS API 33 install/runtime/render checks, verifying backward compatibility with the new target SDK. Physical device testing and Play Console review remain outstanding.
+
 ## Reference dial update — 1.1.0
 
 - [CI passed](https://github.com/seandyadryan/tag-heuer-watch-faces/actions/runs/38232787289): both builds/lint, WFF schema, resource references and pivots, full locale sets, and official memory test.
