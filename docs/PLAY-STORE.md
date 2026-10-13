@@ -8,7 +8,7 @@ Project ini menghasilkan file instalasi dan signed AAB; belum menjadi aplikasi y
 4. Jalankan CI, release workflow, validator WFF dan evaluator memori. Uji pada jam Wear OS 4 minimum serta versi baru, layar kecil/besar, perubahan zona waktu, format 12/24, ambient, warna, penggunaan baterai dan instalasi melalui track Play.
 5. Lengkapi listing berbayar, kategori watch face, negara distribusi, harga dan pajak. Ketersediaan Google Play/pembayaran berbeda menurut negara; jangan menjanjikan semua negara/perangkat.
 6. Buat screenshot aktual di jam, icon/feature graphic sesuai spesifikasi Console, deskripsi yang akurat, email support dan URL privacy policy publik. Preview dari source bukan screenshot pengujian perangkat.
-7. Lengkapi Data safety, rating konten, deklarasi iklan (tidak ada), dan deklarasi lainnya berdasarkan APK final. File privacy policy adalah draft; identitas/contact developer belum tersedia.
+7. Lengkapi Data safety, rating konten, deklarasi iklan (tidak ada), dan deklarasi lainnya berdasarkan APK final. Kebijakan privasi Indonesia/Inggris tersedia di `index.html`, dengan kontak seandyadryan2@gmail.com. Hosting file ini pada URL HTTPS publik dan gunakan URL tersebut dalam listing; sesuaikan kebijakan jika fitur/data aplikasi berubah.
 8. Upload **wear-release.aab** ke listing Wear OS. Pendamping Kotlin dibuat sebagai listing terpisah bila diterbitkan. Tautan companion ke Play baru berfungsi setelah listing watch face tersedia.
 9. Selesaikan internal/closed testing serta persyaratan akun yang ditampilkan Console sebelum production. Terjemahan perlu review penutur asli dan listing perlu terjemahan terpisah.
 10. Naikkan `versionCode` pada setiap upload berikutnya. Jangan mengganti `applicationId` setelah publikasi.

@@ -36,7 +36,7 @@ Workflow `Signed release bundles` dijalankan manual melalui Actions. Secret: `KE
 ## Panduan dan kesiapan rilis
 
 - [Cara memasang ke smartwatch](docs/CONNECT-ID.md), [English installation guide](docs/CONNECT-EN.md).
-- [Persiapan Google Play](docs/PLAY-STORE.md), [cakupan bahasa](docs/LOCALIZATION.md), [kebijakan privasi](docs/PRIVACY.md).
+- [Persiapan Google Play](docs/PLAY-STORE.md), [cakupan bahasa](docs/LOCALIZATION.md), [kebijakan privasi HTML](index.html).
 - [Catatan validasi](docs/VALIDATION.md) memisahkan tes otomatis dan tes perangkat yang masih harus dilakukan.
 
 Build, signed release, validator WFF, evaluator memori, dan smoke check emulator berhasil pada 12 Oktober 2026. Screenshot aktual dan link run tersedia dalam catatan validasi. Pengujian jam fisik dan persetujuan Play Console belum dilakukan.
