@@ -1,0 +1,29 @@
+Hadirkan nuansa balap di pergelangan tangan dengan TAG Heuer Formula 1 McLaren 30th Anniversary Watch Faces. Dial hitam bertekstur, bezel merah, dan indeks silver menghadirkan tampilan analog yang terinspirasi desain jam McLaren.
+
+FITUR UTAMA
+- Jarum analog bergerak mengikuti waktu perangkat.
+- Tiga subdial aktif: detik saat ini, menit saat ini, dan indikator waktu 12 jam.
+- Jendela tanggal menampilkan hari dalam bulan sesuai tanggal perangkat.
+- Pilihan warna jarum detik: merah, biru es, atau silver. Bezel tetap merah.
+- Mode ambient menampilkan jarum utama redup dan waktu digital dengan format 12/24 jam mengikuti pengaturan perangkat.
+- Dibuat menggunakan Watch Face Format untuk Wear OS.
+
+CARA MEMASANG
+1. Buka Google Play di smartwatch yang kompatibel dan instal watch face ini.
+2. Tekan lama tampilan jam, pilih Tambah watch face, lalu pilih TAG Heuer McLaren 30th.
+3. Buka Edit atau Customize untuk memilih warna jarum detik.
+4. Atur Always-on Display melalui pengaturan sistem jam jika tersedia.
+
+Nama menu dapat berbeda menurut produsen smartwatch. Watch face dapat digunakan secara mandiri. Aplikasi panduan Android pendamping bersifat opsional dan dipasang terpisah; memasangnya di ponsel saja tidak memasang watch face di jam.
+
+PERSYARATAN
+Memerlukan smartwatch dengan Wear OS 4 atau lebih baru. Apple Watch, Garmin, Amazfit, Huawei dengan sistem selain Wear OS, dan Samsung Tizen tidak didukung.
+
+PRIVASI
+Tanpa iklan, SDK analitik, atau pengumpulan data pribadi otomatis oleh aplikasi. Pengaturan tampilan dikelola pada perangkat. Pembelian ditangani oleh Google Play.
+
+CATATAN
+Subdial menunjukkan waktu perangkat dan tidak berfungsi sebagai stopwatch. Desain merupakan interpretasi dari referensi jam, bukan salinan persis. Project ini independen dan tidak menyatakan afiliasi resmi dengan TAG Heuer atau McLaren. Merek tersebut dimiliki oleh pemiliknya masing-masing.
+
+DUKUNGAN
+seandyadryan2@gmail.com
