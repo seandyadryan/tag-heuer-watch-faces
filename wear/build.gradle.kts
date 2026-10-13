@@ -6,7 +6,7 @@ android {
         applicationId = "com.deploydulupulangnanti.tagheuermclarenwf"
         minSdk = 33
         targetSdk = 35
-        versionCode = 2
+        versionCode = 4
         versionName = "1.1.0"
     }
     val signingPath = providers.environmentVariable("RELEASE_STORE_FILE").orNull
