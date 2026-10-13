@@ -7,7 +7,7 @@ Project Android native untuk watch face Wear OS dan aplikasi panduan Kotlin. Sou
 ## Cakupan
 
 - `wear`: Watch Face Format **v1**, resource-only XML, application ID **`com.deploydulupulangnanti.tagheuermclarenwf`**. Wear OS 4+ (API 33+), dial McLaren bezel merah, jarum analog, tiga subdial waktu, tanggal aktual, tiga warna jarum detik, mode ambient.
-- `companion`: Android Kotlin native (API 26+), application ID `com.deploydulupulangnanti.tagheuermclarenwf.companion`. Preview lokal, panduan pemasangan, pemilih bahasa, tautan Google Play. Tidak mentransfer watch face lewat Bluetooth.
+- `companion`: Android Kotlin native (API 26+), application ID yang sama: `com.deploydulupulangnanti.tagheuermclarenwf`. Preview lokal, panduan pemasangan, pemilih bahasa, tautan Google Play. Tidak mentransfer watch face lewat Bluetooth.
 - 21 locale lengkap untuk interface dan panduan. Bahasa lain menggunakan Inggris. Terjemahan merupakan draft yang perlu review penutur asli. Ini **bukan dukungan seluruh bahasa dunia**.
 - Jam mengikuti waktu perangkat; waktu digital hanya tampil di ambient dan mengikuti pengaturan 12/24 jam. Dial baru dihasilkan dengan imagegen berdasarkan referensi foto pengguna, termasuk merek/logo dalam referensi. Jarum dan tanggal digambar terpisah agar tetap hidup. [Aset dan prompt](docs/ASSETS.md). Aset geometris versi awal tetap disimpan.
 
@@ -25,7 +25,7 @@ python tools/verify_project.py
 
 Atur `sdk.dir` pada `local.properties` sesuai SDK komputer. File ini tidak di-commit. Script release meminta password tanpa menampilkannya. Keystore lokal: `D:\KEYSTORE\tag-heuer-watch-faces.jks`; alias: `tag-heuer-watch-faces`. Password tidak ditulis dalam repository.
 
-Output: `wear/build/outputs/bundle/release/wear-release.aab`, `companion/build/outputs/bundle/release/companion-release.aab`, dan APK dalam masing-masing `build/outputs/apk/`. Kedua modul mempunyai application ID berbeda dan harus diterbitkan sebagai dua listing Play yang berbeda. Aplikasi pendamping bersifat opsional; watch face mandiri.
+Output: `wear/build/outputs/bundle/release/wear-release.aab`, `companion/build/outputs/bundle/release/companion-release.aab`, dan APK dalam masing-masing `build/outputs/apk/`. Kedua modul menggunakan application ID dan signing key yang sama pada satu listing Play: AAB ponsel di jalur ponsel/tablet, AAB jam di jalur Wear OS khusus. VersionCode harus unik untuk setiap upload pada listing. Aplikasi pendamping bersifat opsional; watch face mandiri. Namespace Kotlin internal `.companion` bukan package instalasi aplikasi.
 
 ## GitHub runner
 

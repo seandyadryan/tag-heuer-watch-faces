@@ -28,6 +28,6 @@ Pixel dimensions and RGB mode are asserted by the export script. Store artwork
 follows the supplied dark racing-layout reference, without copying its developer
 name, status bar, unsupported features or API-level claim.
 
-Use phone screenshots for the Android companion listing. The separate Wear OS
-watch-face listing also requires genuine Wear OS screenshots; these phone panels
+Use phone screenshots for the phone form factor of the shared listing. The Wear OS
+form factor also requires genuine Wear OS screenshots; these phone panels
 do not substitute for watch screenshots. See [Google Play preview asset guidance](https://support.google.com/googleplay/android-developer/answer/9866151).

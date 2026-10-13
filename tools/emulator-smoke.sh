@@ -7,16 +7,16 @@ adb logcat -c
 adb shell input keyevent KEYCODE_WAKEUP
 adb shell input keyevent KEYCODE_HOME
 if [ "$device" = phone ]; then
-  package="$package.companion"
+  activity="com.deploydulupulangnanti.tagheuermclarenwf.companion.MainActivity"
   adb install -r "$(find packages -name companion-debug.apk -print -quit)"
-  adb shell am start -W -n "$package/.MainActivity"
+  adb shell am start -W -n "$package/$activity"
   sleep 3
   adb shell dumpsys activity activities > evidence/activity.txt
-  grep -q "$package/.MainActivity" evidence/activity.txt
+  grep -q "$activity" evidence/activity.txt
   adb exec-out screencap -p > evidence/phone-en.png
   adb shell cmd locale set-app-locales "$package" --user 0 --locales id
   adb shell am force-stop "$package"
-  adb shell am start -W -n "$package/.MainActivity"
+  adb shell am start -W -n "$package/$activity"
   sleep 2
   adb exec-out screencap -p > evidence/phone-id.png
   adb shell input swipe 540 1850 540 400 600
@@ -24,7 +24,7 @@ if [ "$device" = phone ]; then
   adb exec-out screencap -p > evidence/phone-guide-id.png
   adb shell cmd locale set-app-locales "$package" --user 0 --locales ar
   adb shell am force-stop "$package"
-  adb shell am start -W -n "$package/.MainActivity"
+  adb shell am start -W -n "$package/$activity"
   sleep 2
   adb exec-out screencap -p > evidence/phone-ar.png
 else

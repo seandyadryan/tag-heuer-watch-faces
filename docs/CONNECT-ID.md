@@ -35,7 +35,7 @@ Pilih watch face melalui UI jam. Untuk ponsel/emulator Android:
 
 ```powershell
 adb -s SERIAL_PONSEL install -r companion/build/outputs/apk/debug/companion-debug.apk
-adb -s SERIAL_PONSEL shell am start -n com.deploydulupulangnanti.tagheuermclarenwf.companion/.MainActivity
+adb -s SERIAL_PONSEL shell am start -n com.deploydulupulangnanti.tagheuermclarenwf/com.deploydulupulangnanti.tagheuermclarenwf.companion.MainActivity
 ```
 
 Gunakan APK untuk ADB, bukan AAB. Instalasi Play adalah jalur pengguna akhir. Matikan Wireless debugging setelah pengujian. Jangan campurkan APK debug dan release dengan signing key berbeda; uninstall versi pengujian lebih dahulu jika muncul konflik signature.

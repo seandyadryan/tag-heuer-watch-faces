@@ -3,7 +3,7 @@ android {
     namespace = "com.deploydulupulangnanti.tagheuermclarenwf.companion"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.deploydulupulangnanti.tagheuermclarenwf.companion"
+        applicationId = "com.deploydulupulangnanti.tagheuermclarenwf"
         minSdk = 26
         targetSdk = 36
         versionCode = 6

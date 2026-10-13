@@ -2,9 +2,13 @@
 
 ## Optional phone companion — 6.0.0 (13 October 2026)
 
+This earlier build used the `.companion` application ID and is superseded by the
+shared-package phone build. Do not upload the older artifact to the watch-face
+listing. The current phone application ID is `com.deploydulupulangnanti.tagheuermclarenwf`.
+
 - Only the companion module was incremented to versionCode 6 / versionName 6.0.0. Its application ID remains `com.deploydulupulangnanti.tagheuermclarenwf.companion`, with compile/target SDK 36 and minimum SDK 26. Wear OS remains versionCode 5 / versionName 5.0.0 and retains the requested package without a suffix.
 - Local signed companion AAB/APK builds and release lint passed. APK manifest values and APK/AAB signatures were verified with the original signing certificate. Resource verification passed. This is a version-only update; application code and behavior are unchanged from the tested version 5.
-- Local phone deliverables: `artifacts/companion-release-6.0.0/`. Publish only on the separate companion app listing and phone track, not on the existing watch-face listing. Phone publication is optional.
+- Superseded phone deliverables: `artifacts/companion-release-6.0.0/`; retained only as historical evidence. Use the shared-package build below for the current listing.
 
 ## SDK 36 release — 5.0.0 (13 October 2026)
 
